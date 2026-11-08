@@ -27,5 +27,5 @@ MAINTAINER Sebastien Jodogne <s.jodogne@gmail.com>
 LABEL Description="Orthanc, free DICOM server" Vendor="The Orthanc project"
 
 RUN apt-get -y clean && apt-get -y update && \
-    apt-get -y install cmake patch gcc-mingw-w64 g++-mingw-w64 unzip mercurial && \
+    apt-get -y install cmake patch gcc-mingw-w64 g++-mingw-w64 unzip mercurial perl && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
